@@ -1,0 +1,22 @@
+:root{
+  --color-background: #333;
+  --color-text:#FFF;
+}
+body{
+  background:var(--color-background);
+  color: var(--color-text);
+  font-family:sans-serif;
+  padding:0;
+  margin:0;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 90px 1fr;
+}
+nav{
+  background:black;
+  ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
